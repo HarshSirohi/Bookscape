@@ -6,7 +6,7 @@ const RecentlyAdded = () => {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        "https://bookscape-management-system-by-mern-2.onrender.com/api/v1/get-recent-books"
+        "http://localhost:1000/api/v1/get-recent-books"
       );
       setBooks(response.data.data);
     };

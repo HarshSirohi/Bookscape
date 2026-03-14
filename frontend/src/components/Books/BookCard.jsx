@@ -10,7 +10,7 @@ const BookCard = ({ image, title, author, price, bookid, fav }) => {
   const removeFromFavourite = async () => {
     try {
       const response = await axios.put(
-        "https://bookscape-management-system-by-mern-2.onrender.com/api/v1/remove-from-favourite",
+        "http://localhost:1000/api/v1/remove-from-favourite",
         {},
         { headers }
       );

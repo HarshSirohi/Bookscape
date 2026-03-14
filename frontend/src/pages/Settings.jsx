@@ -16,7 +16,7 @@ const Settings = () => {
   useEffect(() => {
     const fetch = async () => {
       const response = await axios.get(
-        "https://bookscape-management-system-by-mern-2.onrender.com/api/v1/getUserData",
+        "http://localhost:1000/api/v1/getUserData",
         { headers }
       );
       setProfileData(response.data);
@@ -27,7 +27,7 @@ const Settings = () => {
 
   const updateAddress = async () => {
     const res = await axios.put(
-      "https://bookscape-management-system-by-mern-2.onrender.com/api/v1/update-user-address",
+      "http://localhost:1000/api/v1/update-user-address",
       Value,
       {
         headers,

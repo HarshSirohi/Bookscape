@@ -22,7 +22,7 @@ const Cart = () => {
     } else {
       const fetch = async () => {
         const res = await axios.get(
-          "https://bookscape-management-system-by-mern-2.onrender.com/api/v1/get-user-cart",
+          "http://localhost:1000/api/v1/get-user-cart",
           { headers }
         );
 
@@ -44,7 +44,7 @@ const Cart = () => {
   const deletItem = async (id) => {
     try {
       const response = await axios.put(
-        `https://bookscape-management-system-by-mern-2.onrender.com/api/v1/remove-from-cart/${id}`,
+        `http://localhost:1000/api/v1/remove-from-cart/${id}`,
         {},
         { headers }
       );
@@ -56,7 +56,7 @@ const Cart = () => {
   const PlaceOrder = async () => {
     try {
       const response = await axios.post(
-        `https://bookscape-management-system-by-mern-2.onrender.com/api/v1/place-order`,
+        `http://localhost:1000/api/v1/place-order`,
         { order: Cart },
         { headers }
       );
