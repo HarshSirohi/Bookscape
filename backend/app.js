@@ -9,7 +9,13 @@ const order = require("./routes/order");
 require("dotenv").config();
 
 const PORT = process.env.PORT || 1000;
-app.use(cors());
+
+app.use(cors({
+  origin: process.env.FRONTEND_URL,
+  credentials: true
+}));
+
+// app.use(cors());
 app.use(express.json());
 
 //Connection
