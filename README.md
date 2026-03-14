@@ -8,7 +8,7 @@ This project demonstrates a complete production-style web application with authe
 🌐 Live Demo
 
 Frontend: https://bookscape-zone.netlify.app
-Backend API: https://bookscape-management-system-by-mern-3.onrender.com
+
 
 🧠 Project Motivation
 
